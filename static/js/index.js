@@ -72,6 +72,26 @@ function copyBibTeX() {
     }
 }
 
+// Dismiss the welcome overlay
+function dismissOverlay() {
+    const overlay = document.getElementById('welcome-overlay');
+    const mainContent = document.getElementById('main-content');
+    
+    if (overlay) {
+        overlay.classList.add('hidden');
+    }
+    if (mainContent) {
+        mainContent.classList.remove('blurred');
+    }
+    document.body.classList.remove('overlay-active');
+
+    // Postpone and lazy load graphs/images
+    document.querySelectorAll('img[data-src]').forEach(img => {
+        img.src = img.getAttribute('data-src');
+        img.removeAttribute('data-src');
+    });
+}
+
 // Scroll to top functionality
 function scrollToTop() {
     window.scrollTo({

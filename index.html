@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
   <meta name="title" content="Reasoning Quality Emerges Early: Data Curation for Reasoning Models">
-  <meta name="description" content="Official project page for 'Reasoning Quality Emerges Early: Data Curation for Reasoning Models' (ICML 2026). TEMP selects difficult and diverse reasoning traces using only the initial tokens, improving token efficiency by 91%.">
-  <meta name="keywords" content="data curation, reasoning models, supervised fine-tuning, large language models, machine learning, ICML 2026, TEMP, Token-Efficient Model Perturbation">
+  <meta name="description"
+    content="Official project page for 'Reasoning Quality Emerges Early: Data Curation for Reasoning Models' (ICML 2026). TEMP selects difficult and diverse reasoning traces using only the initial tokens, improving token efficiency by 91%.">
+  <meta name="keywords"
+    content="data curation, reasoning models, supervised fine-tuning, large language models, machine learning, ICML 2026, TEMP, Token-Efficient Model Perturbation">
   <meta name="author" content="Hongyi Henry Jin, Wenhan Yang, Meysam Ghaffari, Carlos Morato, Baharan Mirzasoleiman">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="BigML Lab, UCLA">
   <meta property="og:title" content="Reasoning Quality Emerges Early: Data Curation for Reasoning Models">
-  <meta property="og:description" content="TEMP selects difficult and diverse reasoning traces using only the initial tokens, improving token efficiency by 91% while preserving or improving downstream accuracy.">
+  <meta property="og:description"
+    content="TEMP selects difficult and diverse reasoning traces using only the initial tokens, improving token efficiency by 91% while preserving or improving downstream accuracy.">
   <meta property="og:url" content="https://hjenryin.github.io/TEMP-project-Page/">
   <meta property="og:image" content="static/images/fig1.svg">
   <meta property="og:image:alt" content="TEMP Data Curation Pipeline Overview">
@@ -29,7 +33,8 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Reasoning Quality Emerges Early: Data Curation for Reasoning Models">
-  <meta name="twitter:description" content="TEMP selects difficult and diverse reasoning traces using only the initial tokens, improving token efficiency by 91% while preserving or improving downstream accuracy.">
+  <meta name="twitter:description"
+    content="TEMP selects difficult and diverse reasoning traces using only the initial tokens, improving token efficiency by 91% while preserving or improving downstream accuracy.">
   <meta name="twitter:image" content="static/images/fig1.svg">
   <meta name="twitter:image:alt" content="TEMP Data Curation Pipeline Overview">
 
@@ -43,13 +48,13 @@
   <meta name="citation_publication_date" content="2026">
   <meta name="citation_conference_title" content="Forty-third International Conference on Machine Learning">
   <meta name="citation_pdf_url" content="static/pdfs/paper.pdf">
-  
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,21 +63,24 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
   <title>Reasoning Quality Emerges Early: Data Curation for Reasoning Models | ICML 2026</title>
-  
+
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -80,10 +88,10 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -103,10 +111,9 @@
       }
     };
   </script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   </script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
@@ -170,179 +177,238 @@
   }
   </script>
 </head>
-<body>
+
+<body class="overlay-active">
+
+  <!-- Welcome Overlay -->
+  <div id="welcome-overlay" class="welcome-overlay">
+    <div class="overlay-card">
+      <h2 class="overlay-title">Reasoning Quality Emerges Early</h2>
+      <p class="overlay-subtitle">Data Curation for Reasoning Models (ICML 2026)</p>
+      <div class="overlay-buttons">
+        <a href="https://hjenryin.github.io/homepage/" class="overlay-btn btn-author">
+          <span class="btn-icon"><i class="fas fa-user-graduate"></i></span>
+          <span class="btn-text">Author Info <br><small>(Looking for Research Internship!)</small></span>
+        </a>
+        <a href="https://arxiv.org/abs/2606.26797" class="overlay-btn btn-arxiv">
+          <span class="btn-icon"><i class="ai ai-arxiv"></i></span>
+          <span class="btn-text">Arxiv Link</span>
+        </a>
+        <button onclick="dismissOverlay()" class="overlay-btn btn-project">
+          <span class="btn-icon"><i class="fas fa-project-diagram"></i></span>
+          <span class="btn-text">Project Page</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Reasoning Quality Emerges Early:<br>Data Curation for Reasoning Models</h1>
-            
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://hjenryin.github.io/homepage/" target="_blank">Hongyi Henry Jin</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" target="_blank">Wenhan Yang</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/meysam-ghaffari-ph-d-a2553088/" target="_blank">Meysam Ghaffari</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/carlosmorato/" target="_blank">Carlos Morato</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://baharanm.github.io/" target="_blank">Baharan Mirzasoleiman</a><sup>1</sup>
-              </span>
-            </div>
+  <main id="main-content" class="blurred">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Reasoning Quality Emerges Early:<br>Data Curation for Reasoning
+                Models</h1>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Department of Computer Science, University of California, Los Angeles (UCLA), USA</span><br>
-              <span class="author-block"><sup>2</sup>Optum AI, UnitedHealth Group, Minneapolis, Minnesota, USA</span>
-            </div>
-
-            <!-- Centered Venue Container -->
-            <div class="publication-venue-container" style="display: flex; justify-content: center; margin-top: 1rem;">
-              <span class="publication-venue"><strong>ICML 2026</strong></span>
-            </div>
-
-            <div class="column has-text-centered" style="margin-top: 1rem;">
-              <div class="publication-links">
-                <!-- PDF Link -->
-                <span class="link-block">
-                  <a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://hjenryin.github.io/homepage/" target="_blank">Hongyi Henry Jin</a><sup>1</sup>,
                 </span>
+                <span class="author-block">
+                  <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" target="_blank">Wenhan
+                    Yang</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/meysam-ghaffari-ph-d-a2553088/" target="_blank">Meysam
+                    Ghaffari</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/carlosmorato/" target="_blank">Carlos Morato</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://baharanm.github.io/" target="_blank">Baharan Mirzasoleiman</a><sup>1</sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Department of Computer Science, University of California, Los
+                  Angeles (UCLA), USA</span><br>
+                <span class="author-block"><sup>2</sup>Optum AI, UnitedHealth Group, Minneapolis, Minnesota, USA</span>
+              </div>
+
+              <!-- Centered Venue Container -->
+              <div class="publication-venue-container"
+                style="display: flex; justify-content: center; margin-top: 1rem;">
+                <span class="publication-venue"><strong>ICML 2026</strong></span>
+              </div>
+
+              <div class="column has-text-centered" style="margin-top: 1rem;">
+                <div class="publication-links">
+                  <!-- PDF Link -->
+                  <span class="link-block">
+                    <a href="static/pdfs/paper.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Paper abstract -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Supervised fine-tuning (SFT) on a small, high-quality set of long reasoning traces is an effective approach for eliciting strong reasoning capabilities in Large Language Models (LLMs). However, existing methods for curating high-quality SFT data rely heavily on strong reasoning models to filter examples based on diversity and difficulty, making the curation process costly while often yielding suboptimal data quality. In this work, we show that diverse and challenging reasoning examples can be identified using only the initial reasoning tokens. Specifically, we demonstrate that difficult problems can be reliably detected based on the loss of the first 100 reasoning tokens evaluated at a randomly perturbed checkpoint of the pretrained model. We further show that examples exhibiting similar loss patterns over their first 1k reasoning tokens across a small number of perturbed checkpoints extrapolating along the fine-tuning trajectory provably induce similar gradients. We validate our approach through extensive experiments on fine-tuning Qwen2.5-7B and Llama3.1-8B models on the M23K medical reasoning and OpenThoughts-Math datasets. Our method outperforms existing baselines by up to 1.7% while being 91% more token efficient.
-            </p>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Supervised fine-tuning (SFT) on a small, high-quality set of long reasoning traces is an effective
+                approach for eliciting strong reasoning capabilities in Large Language Models (LLMs). However, existing
+                methods for curating high-quality SFT data rely heavily on strong reasoning models to filter examples
+                based on diversity and difficulty, making the curation process costly while often yielding suboptimal
+                data quality. In this work, we show that diverse and challenging reasoning examples can be identified
+                using only the initial reasoning tokens. Specifically, we demonstrate that difficult problems can be
+                reliably detected based on the loss of the first 100 reasoning tokens evaluated at a randomly perturbed
+                checkpoint of the pretrained model. We further show that examples exhibiting similar loss patterns over
+                their first 1k reasoning tokens across a small number of perturbed checkpoints extrapolating along the
+                fine-tuning trajectory provably induce similar gradients. We validate our approach through extensive
+                experiments on fine-tuning Qwen2.5-7B and Llama3.1-8B models on the M23K medical reasoning and
+                OpenThoughts-Math datasets. Our method outperforms existing baselines by up to 1.7% while being 91% more
+                token efficient.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End paper abstract -->
+    </section>
+    <!-- End paper abstract -->
 
-  <!-- Method Section -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Method</h2>
-      <hr>
-      <div class="content has-text-justified">
-        <img src="./static/images/fig1.svg" alt="TEMP Pipeline Overview" class="is-centered" style="width: 100%; display: block; margin: 0 auto 2rem;">
-        <p>
-          Overview of TEMP: Token-Efficient Model Perturbation Reasoning Data Selection. First, using only the first 100 tokens of reasoning traces, we identify challenging examples as those exhibiting higher loss at a randomly perturbed checkpoint of the pretrained model. Then, we cluster examples based on their first 1k token loss values, measured at a small number of noisy checkpoints extrapolating along the fine-tuning direction, and sample a diverse subset. The curated difficult and diverse SFT dataset enables efficient training of high-performing reasoning models.
-        </p>
+    <!-- Method Section -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Method</h2>
+        <hr>
+        <div class="content has-text-justified">
+          <img data-src="./static/images/fig1.svg" alt="TEMP Pipeline Overview" class="is-centered"
+            style="width: 100%; display: block; margin: 0 auto 2rem;">
+          <p>
+            Overview of TEMP: Token-Efficient Model Perturbation Reasoning Data Selection. First, using only the first
+            100 tokens of reasoning traces, we identify challenging examples as those exhibiting higher loss at a
+            randomly perturbed checkpoint of the pretrained model. Then, we cluster examples based on their first 1k
+            token loss values, measured at a small number of noisy checkpoints extrapolating along the fine-tuning
+            direction, and sample a diverse subset. The curated difficult and diverse SFT dataset enables efficient
+            training of high-performing reasoning models.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Main Results Section - Reorganized 1-wide with dividers -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Main Results</h2>
-      <hr>
-      <div class="content has-text-justified">
-        
-        <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
-          <img src="./static/images/m23k_accuracy.svg" alt="Medical Reasoning Results" style="max-width: 90%; height: auto; display: block; margin: 0 auto 1rem;">
-          <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 90%;">
-            Our method, TEMP, outperforms all baselines when fine-tuning Qwen2.5-7B-Instruct (left) and Llama3.1-8B-Instruct (right) on 1k examples selected from the M23k medical reasoning dataset. Average accuracy is shown across 10 medical benchmarks.
-          </p>
-        </div>
-        
-        <hr style="margin: 2rem auto; width: 85%;">
-        
-        <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
-          <img src="./static/images/m23k-t07.svg" alt="Budget Scaling" style="max-width: 80%; height: auto; display: block; margin: 0 auto 1rem;">
-          <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 80%;">
-            Fine-tuning Qwen2.5-7B-Instruct on on the M23k medical reasoning dataset. Average accuracy of subsets of various sizes is shown across 10 medical benchmarks. TEMP outperforms baselines across different budgets.
-          </p>
-        </div>
-        
-        <hr style="margin: 2rem auto; width: 85%;">
-        
-        <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
-          <img src="./static/images/openthoughts_accuracy.svg" alt="Mathematical Reasoning Results" style="max-width: 80%; height: auto; display: block; margin: 0 auto 1rem;">
-          <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 80%;">
-            Comparison of our method, TEMP, with  baselines for fine-tuning Qwen2.5-7B-Instruct on 1k examples selected from the highly-curated OpenThoughts-Math dataset.
-          </p>
-        </div>
-        
-        <hr style="margin: 2rem auto; width: 85%;">
-        
-        <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
-          <img src="./static/images/tokens_to_process.svg" alt="Token Efficiency" style="max-width: 80%; height: auto; display: block; margin: 0 auto 1rem;">
-          <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 80%;">
-            Token efficiency of our method (TEMP) vs baselines for selecting 1k data. While baselines requires processing the entire reasoning traces, TEMP only processes the initial tokens, improving token efficiency by 91% on the OpenThoughts-Math dataset.
-          </p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
+    <!-- Main Results Section - Reorganized 1-wide with dividers -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Main Results</h2>
+        <hr>
+        <div class="content has-text-justified">
 
-  <!-- BibTeX Citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
+          <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
+            <img data-src="./static/images/m23k_accuracy.svg" alt="Medical Reasoning Results"
+              style="max-width: 90%; height: auto; display: block; margin: 0 auto 1rem;">
+            <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 90%;">
+              Our method, TEMP, outperforms all baselines when fine-tuning Qwen2.5-7B-Instruct (left) and
+              Llama3.1-8B-Instruct (right) on 1k examples selected from the M23k medical reasoning dataset. Average
+              accuracy is shown across 10 medical benchmarks.
+            </p>
+          </div>
+
+          <hr style="margin: 2rem auto; width: 85%;">
+
+          <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
+            <img data-src="./static/images/m23k-t07.svg" alt="Budget Scaling"
+              style="max-width: 80%; height: auto; display: block; margin: 0 auto 1rem;">
+            <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 80%;">
+              Fine-tuning Qwen2.5-7B-Instruct on on the M23k medical reasoning dataset. Average accuracy of subsets of
+              various sizes is shown across 10 medical benchmarks. TEMP outperforms baselines across different budgets.
+            </p>
+          </div>
+
+          <hr style="margin: 2rem auto; width: 85%;">
+
+          <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
+            <img data-src="./static/images/openthoughts_accuracy.svg" alt="Mathematical Reasoning Results"
+              style="max-width: 80%; height: auto; display: block; margin: 0 auto 1rem;">
+            <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 80%;">
+              Comparison of our method, TEMP, with baselines for fine-tuning Qwen2.5-7B-Instruct on 1k examples selected
+              from the highly-curated OpenThoughts-Math dataset.
+            </p>
+          </div>
+
+          <hr style="margin: 2rem auto; width: 85%;">
+
+          <div class="result-block" style="margin-bottom: 3rem; text-align: center;">
+            <img data-src="./static/images/tokens_to_process.svg" alt="Token Efficiency"
+              style="max-width: 80%; height: auto; display: block; margin: 0 auto 1rem;">
+            <p style="font-size: 0.95rem; text-align: justify; margin: 0 auto; max-width: 80%;">
+              Token efficiency of our method (TEMP) vs baselines for selecting 1k data. While baselines requires
+              processing the entire reasoning traces, TEMP only processes the initial tokens, improving token efficiency
+              by 91% on the OpenThoughts-Math dataset.
+            </p>
+          </div>
+
+        </div>
       </div>
-      <pre id="bibtex-code"><code>@inproceedings{jin2026reasoning,
+    </section>
+
+    <!-- BibTeX Citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{jin2026reasoning,
   title={Reasoning Quality Emerges Early: Data Curation for Reasoning Models},
   author={Jin, Hongyi Henry and Yang, Wenhan and Ghaffari, Meysam and Morato, Carlos and Mirzasoleiman, Baharan},
   booktitle={Forty-third International Conference on Machine Learning},
   year={2026},
   url={https://openreview.net/forum?id=4Mu4AA14jr}
 }</code></pre>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-            </p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank">Academic Project Page Template</a>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   </main>
 </body>
+
 </html>
